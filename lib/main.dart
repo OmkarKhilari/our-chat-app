@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:our_chat_app/components/custom_textfield.dart';
 
 void main() {
   runApp(const MyApp());
@@ -12,7 +13,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Our Chat App',
-      home: const Placeholder(),
+      home: Scaffold(body: SafeArea(child: Center(child: CustomTextfield(),))),
     );
   }
 }
