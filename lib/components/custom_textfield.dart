@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
+// TODO: add icon must alwas remain down and length of text input must be in container
+
 class CustomTextfield extends StatelessWidget {
   const CustomTextfield({super.key});
 
@@ -9,14 +11,15 @@ class CustomTextfield extends StatelessWidget {
   double width = MediaQuery.of(context).size.width;
 
     return Container(
-      width: width*0.75,
+      width: width*0.8,
       margin: EdgeInsets.only(top: 8),
       decoration: BoxDecoration(
         color: Color(0xff000000).withOpacity(0.6),
         borderRadius: BorderRadius.circular(20)
       ),
-      // padding: EdgeInsets.only(left: 12,right: 12),
+      padding: EdgeInsets.only(right: 12),
       child: TextField(
+        textAlign: TextAlign.start,
         decoration: InputDecoration(
           hintText: 'Message...',
           hintStyle: GoogleFonts.montserrat(
