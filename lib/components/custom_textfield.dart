@@ -12,7 +12,7 @@ class CustomTextfield extends StatelessWidget {
 
     return Container(
       width: width*0.8,
-      margin: EdgeInsets.only(top: 8),
+      margin: EdgeInsets.only(top: 12, bottom: 12),
       decoration: BoxDecoration(
         color: Color(0xff000000).withOpacity(0.6),
         borderRadius: BorderRadius.circular(20)
